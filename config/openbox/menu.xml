@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<menu id="root-menu-153616" label="Anonymous">
+			<item label="anonymous stop">
+				<action name="Execute">
+					<execute>urxvt -geometry 100x30 -title anonymous -e sh -c 'sudo anonymous stop; bash -l'</execute>
+				</action>
+			</item>
+			<item label="anonymous start">
+				<action name="Execute">
+					<execute>urxvt -geometry 100x30 -title anonymous -e sh -c 'sudo anonymous start; bash -l'</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-943224" label="Pentest">
+			<menu id="root-menu-943224-56521" label="Information Gathering">
+				<menu id="root-menu-943224-56521-63537" label="Network">
+					<item label="arp-scan">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title arp-scan -e sh -c 'sudo arp-scan -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="arping">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title arping -e sh -c 'sudo arping -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="ike-scan">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title ike-scan -e sh -c 'sudo ike-scan -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="knockpy">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title knockpy -e sh -c 'sudo knockpy -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="nbtscan">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title nbtscan -e sh -c 'sudo nbtscan -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="sslscan">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title sslscan -e sh -c 'sudo sslscan; bash -l'</execute>
+						</action>
+					</item>
+					<item label="theharvester">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title theharvester -e sh -c 'sudo harvester -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="Zenmap">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title zenmap -e sh -c 'sudo zenmap; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-56521-77550" label="Web Application">
+					<item label="dirs3arch">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title dirsearch -e sh -c 'dirsearch -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="whatweb">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title whatweb -e sh -c 'whatweb -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-565917" label="DracOS">
+				<item label="Fatrat">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title fatrat -e sh -c 'sudo fatrat; bash -l'</execute>
+					</action>
+				</item>
+				<item label="DracNmap">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title cisco-torch -e sh -c 'cd /opt/Dracnmap;sudo ./Dracnmap.sh -h; bash -l'</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-943224-201746" label="Vulnerability Assessment">
+				<menu id="root-menu-943224-201746-341823" label="Network">
+					<item label="openVAS GSA">
+						<action name="Execute">
+							<execute>command</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-201746-131822" label="Web Application">
+					<item label="mikto">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title nikto -e sh -c 'nikto -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="skipfish">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title skipfish -e sh -c 'skipfish -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-66333" label="Exploit">
+				<menu id="root-menu-943224-66333-323343" label="Browser">
+					<item label="BeFF">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title beef-server -e sh -c 'beef-server -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-66333-303526" label="Database">
+					<item label="sqlmap">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title sqlmap -e sh -c 'sudo sqlmap -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-66333-853743" label="Network">
+					<item label="Armitage">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title armitage -e sh -c 'sudo armitage; bash -l'</execute>
+						</action>
+					</item>
+					<item label="msfconsole">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title msfconsole -e sh -c 'sudo msfconsole; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-66333-83943" label="Web application">
+					<item label="fimap">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title fimap -e sh -c 'sudo fimap -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="wpscan">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title wpscan -e sh -c 'sudo wpscan -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-444122" label="Social engineering">
+				<menu id="root-menu-943224-444122-174156" label="Honey pots">
+					<item label="thpot">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title thpot -e sh -c 'thpot --help; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-444122-224157" label="Toolkit">
+					<item label="setoolkit">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title setoolkit -e sh -c 'sudo setoolkit; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-28462" label="Stress testing">
+				<menu id="root-menu-943224-28462-474623" label="DoS">
+					<item label="siege">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title siege -e sh -c 'siege -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="slowhttptest">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title slowhttptestcan -e sh -c 'slowhttptest -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-462224" label="Privilege Escalation">
+				<menu id="root-menu-943224-462224-842250" label="Password">
+					<menu id="root-menu-943224-462224-842250-99239" label="Local">
+						<item label="New Item">
+							<action name="Execute">
+								<execute>command</execute>
+							</action>
+						</item>
+					</menu>
+					<menu id="root-menu-943224-462224-842250-86239" label="Remote">
+						<item label="New Item">
+							<action name="Execute">
+								<execute>command</execute>
+							</action>
+						</item>
+					</menu>
+				</menu>
+				<menu id="root-menu-943224-462224-542250" label="Sniffing">
+					<item label="drifnet">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title drifnet -e sh -c 'drifnet -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="dsniff">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title dsniff -e sh -c 'dsniff -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="Ettercap">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title ettercap -e sh -c 'ettercap -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="ngrep">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title ngrep -e sh -c 'ngrep -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="sslsniff">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title sslsniff -e sh -c 'sslsniff -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="wireshark">
+						<action name="Execute">
+							<execute>wireshark</execute>
+						</action>
+					</item>
+					<item label="tcpdump">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title tcpdump -e sh -c 'tcpdump -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-462224-642941" label="Spoofing">
+					<item label="arpspoof">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title arpspoof  -e sh -c 'arpspoof -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="dnsspoof">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title dnsspoof -e sh -c 'dnsspoof -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="scapy">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title scapy -e sh -c 'scapy -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="yersinia">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title yersinia -e sh -c 'yersinia -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-16330" label="Documentation &amp; Reporting">
+				<item label="MagicTree">
+					<action name="Execute">
+						<execute>magictree</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-943224-763436" label="Reserver Engineering">
+				<item label="binwalk">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title binwalk -e sh -c 'binwalk -h; bash -l'</execute>
+					</action>
+				</item>
+				<item label="Dissy">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title dissy -e sh -c 'dissy -h; bash -l'</execute>
+					</action>
+				</item>
+				<item label="flasm">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title flasm -e sh -c 'flasm -h; bash -l'</execute>
+					</action>
+				</item>
+				<item label="GHex">
+					<action name="Execute">
+						<execute>ghex</execute>
+					</action>
+				</item>
+				<item label="nasm">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title nasm -e sh -c 'nasm -h; bash -l'</execute>
+					</action>
+				</item>
+				<item label="radare2">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title radare2 -e sh -c 'radare2 -h; bash -l'</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-943224-56494" label="Forensic analysis">
+				<menu id="root-menu-943224-56494-504918" label="acquisition">
+					<item label="ddrescue">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title ddresque -e sh -c 'ddrescue -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="guymager">
+						<action name="Execute">
+							<execute>guymager</execute>
+						</action>
+					</item>
+					<item label="dcfldd">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title dcfldd -e sh -c 'dcfldd --help; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-56494-214918" label="Data recovery">
+					<item label="rifiuti2">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title rifiuti2 -e sh -c 'rifiuti2 -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="photorec">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title photorec -e sh -c 'photorec -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="testdisk">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title testdisk -e sh -c 'testdisk -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+			<menu id="root-menu-943224-412418" label="VoIP Analysis">
+				<item label="sipcrack">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title sipcrack -e sh -c 'sipcrack -h; bash -l'</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-943224-642455" label="Wireless Analysis">
+				<menu id="root-menu-943224-642455-23409" label="Bluetooth">
+					<item label="btscanner">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title btscanner -e sh -c 'btscanner -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="hcidump">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title hcidump -e sh -c 'hcidump -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="ussp-push">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title ussp-push -e sh -c 'ussp-push -h; bash -l'</execute>
+						</action>
+					</item>
+					<item label="obexftp">
+						<action name="Execute">
+							<execute>urxvt -geometry 100x30 -title obexftp -e sh -c 'obexftp -h; bash -l'</execute>
+						</action>
+					</item>
+				</menu>
+				<menu id="root-menu-943224-642455-674418" label="wifi">
+					<menu id="root-menu-943224-642455-674418-804432" label="cracking">
+						<item label="aircrack-ng">
+							<action name="Execute">
+								<execute>urxvt -geometry 100x30 -title aircrack-ng -e sh -c 'aircrack-ng; bash -l'</execute>
+							</action>
+						</item>
+						<item label="pyrit">
+							<action name="Execute">
+								<execute>urxvt -geometry 100x30 -title pyrit -e sh -c 'pyrit -h; bash -l'</execute>
+							</action>
+						</item>
+						<item label="reaver">
+							<action name="Execute">
+								<execute>urxvt -geometry 100x30 -title reaver -e sh -c 'reaver -h; bash -l'</execute>
+							</action>
+						</item>
+						<item label="wifite">
+							<action name="Execute">
+								<execute>urxvt -geometry 100x30 -title wifite -e sh -c 'wifite -h; bash -l'</execute>
+							</action>
+						</item>
+					</menu>
+					<menu id="root-menu-943224-642455-674418-784427" label="scanning">
+						<item label="kismet">
+							<action name="Execute">
+								<execute>urxvt -geometry 100x30 -title kismet -e sh -c 'kismet -h; bash -l'</execute>
+							</action>
+						</item>
+						<item label="wash">
+							<action name="Execute">
+								<execute>urxvt -geometry 100x30 -title wash  -e sh -c 'wash -h; bash -l'</execute>
+							</action>
+						</item>
+					</menu>
+				</menu>
+			</menu>
+		</menu>
+		<menu id="/Debian"/>
+		<menu id="root-menu-535114" label="apsya">
+			<menu id="root-menu-535114-825125" label="Emulator">
+				<item label="Virtualbox">
+					<action name="Execute">
+						<execute>virtualbox</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-5532" label="office">
+				<item label="libreoffice">
+					<action name="Execute">
+						<execute>libreoffice</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-54542" label="Music">
+				<item label="ncmpcpp">
+					<action name="Execute">
+						<execute>urxvt -geometry 74x22 -title ncmpcpp -e sh -c 'ncmpcpp; bash -l'</execute>
+					</action>
+				</item>
+				<item label="Mpd">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title anonymous -e sh -c 'sudo killall mpd &amp;&amp; mpd; bash -l'</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-545625" label="Development">
+				<item label="mousepad">
+					<action name="Execute">
+						<execute>mousepad</execute>
+					</action>
+				</item>
+				<item label="Brackets">
+					<action name="Execute">
+						<execute>brackets</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-105421" label="Graphics">
+				<item label="Gimp">
+					<action name="Execute">
+						<execute>gimp</execute>
+					</action>
+				</item>
+				<item label="Gcolo2">
+					<action name="Execute">
+						<execute>gcolor2</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-8031" label="File Manager">
+				<item label="ranger">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title ranger -e sh -c 'ranger; bash -l'</execute>
+					</action>
+				</item>
+				<item label="lfm">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title lfm -e sh -c 'lfm; bash -l'</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-741038" label="Theme">
+				<item label="nitrogen">
+					<action name="Execute">
+						<execute>nitrogen</execute>
+					</action>
+				</item>
+				<item label="lxappearance ">
+					<action name="Execute">
+						<execute>lxappearance </execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-72244" label="Web Browser">
+				<item label="firefox">
+					<action name="Execute">
+						<execute>firefox</execute>
+					</action>
+				</item>
+				<item label="w3m">
+					<action name="Execute">
+						<execute>urxvt -geometry 100x30 -title w3m -e sh -c 'w3m google.com; bash -l'</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="root-menu-535114-16419" label="Video">
+				<item label="Vlc">
+					<action name="Execute">
+						<execute>vlccd</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<item label="scrot">
+			<action name="Execute">
+				<execute>urxvt -geometry 24x3 -title scrot -e sh -c 'scrot -d 3 ssan-$(date +%F-%T).png; bash -l'</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<separator/>
+		<separator/>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>
