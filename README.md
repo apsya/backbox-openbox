@@ -1,2 +1,2 @@
 # backbox-openbox
-![Screenshot](dracos.jpg)
+![Screenshot](backbox-edit.png)
