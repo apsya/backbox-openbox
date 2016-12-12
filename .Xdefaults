@@ -1,0 +1,67 @@
+#include </home/whoami/modding/crayolo/colors/paints>
+
+Xft.dpi:96
+Xft.antialiasing:1
+Xft.rgba:rgb
+Xft.hinting:hintslight
+Xft.lcdfilter:lcddefault
+ 
+*.cursorColor: #ebac54
+ 
+
+URxvt.highlightColor:       #ebac54
+URxvt.highlightTextColor:   #151515
+ 
+URxvt.scrollstyle:plain
+URxvt.scrollBar:false
+URxvt.scrollTtyOutput:false
+URxvt.scrollWithBuffer:true
+URxvt.scrollTtyKeypress:true
+ 
+URxvt.cursorColor:          #ebac54
+URxvt.cursorColor2:         #ebac54
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      false
+URxvt.depth:24
+ 
+!- Perl Extension
+URxvt.perl-ext-common:default,matcher,url-select,clipboard
+URxvt.url-launcher: firefox
+URxvt.matcher.button:1
+ 
+!- Copy/paste
+URxvt.iso14755: False
+URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
+URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
+ 
+URxvt.underlineURLs:        true
+URxvt.font:xft:ProFont:size=9
+URxvt.transparent:false
+URxvt.shading:24
+URxvt.geometry:96x32
+URxvt.borderLess: true
+URxvt.borderColor: fg
+URxvt.internalBorder: 2
+! Colors  
+! special
+! special
+! Colors
+*background:   #1D1D1D
+*foreground:   fg
+
+*color0:      blk
+*color8:      bblk
+*color1:      red
+*color9:      bred
+*color2:      grn
+*color10:     bgrn
+*color3:      ylw
+*color11:     bylw
+*color4:      blu
+*color12:     bblu
+*color5:      mag
+*color13:     bmag
+*color6:      cyn
+*color14:     bcyn
+*color7:      wht
+*color15:     bwht
