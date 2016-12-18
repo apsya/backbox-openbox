@@ -1,5 +1,9 @@
 #!/bin/bash
-#######
+#########################
+#Firefox installer dracos
+#script by apsyadira 
+#github https://github.com/apsya
+#########################
 
 #COLOR
 
@@ -36,53 +40,44 @@ echo "                      88000000008880#      000    "
 echo "                            9               0 "
 echo ""
 echo -e $white" ==========================================="
-echo -e $cyan"  Drac0S Linux Super Tools"
-echo -e $cyan"  Author: eLCrush [-Rifqi Hidayatulloh-]"
+echo -e $cyan"  Drac0S Linux Application Tools"
+echo -e $cyan"  Author: Apsyadira"
+echo -e $cyan"  Thanks to : All dev Dracos Linux"
 echo -e $cyan"  Visit: Dracos-linux.org"
 echo -e $white" ==========================================="
 echo ""
-echo -e $white"	[$red"01"$white] UPDATE APLIKASI"
-echo -e $white"	[$red"02"$white] FIREFOX 64 BIT"
-echo -e $white"	[$red"03"$white] FIREFOX 32 BIT"
-echo -e $white"	[$red"04"$white] INSTALL GTK3 (recomended)"
-echo -e $white"	[$red"05"$white] EXIT"
+echo -e $white"	[$red"01"$white] FIREFOX 64 BIT"
+echo -e $white"	[$red"02"$white] FIREFOX 32 BIT"
+echo -e $white"	[$red"03"$white] INSTALL GTK3 (recomended)"
+echo -e $white"	[$red"04"$white] EXIT"
 echo ""
-echo -n -e $cyan      "Pilih yang anda suka ?"
+echo -n -e $cyan      "Insert yout choise!"
 read shindy
 	if test $shindy == '1'
 			then
-			sudo apt-get update
+			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-x86_64/en-US/firefox-49.0.tar.bz2
+ 			tar -xvf firefox*.tar.bz2
+ 			mv firefox /opt
+ 			sudo ln -s /opt/firefox/firefox /usr/bin/firefox
 
 	elif test $shindy == '2'
  			then
- 			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-x86_64/en-US/firefox-49.0.tar.bz2
+ 			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-i686/en-US/firefox-49.0.tar.bz2
  			tar -xvf firefox*.tar.bz2
- 			cd firefox
  			mv firefox /opt
  			sudo ln -s /opt/firefox/firefox /usr/bin/firefox
  	
  	elif test $shindy == '3'
  			then
- 			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-i686/en-US/firefox-49.0.tar.bz2
- 			tar -xvf firefox*.tar.bz2
- 			cd firefox
- 			mv firefox /opt
- 			sudo ln -s /opt/firefox/firefox /usr/bin/firefox
- 	elif test $shindy == '4'
- 			then
  			wget -c ftp://ftp.gnome.org/pub/gnome/sources/gtk+/3.18/gtk+-3.18.7.tar.xz
  			tar -xf gtk+-3.18.7.tar.xz
  			cd gtk+-3.18.7
- 			./configure --prefix=/usr             \
-				    --sysconfdir=/etc         \
-				    --enable-broadway-backend \
-				    --enable-x11-backend      \
-				    --disable-wayland-backend &&
+ 			./configure
  			make
  			make install
- 	elif test $shindy == '5'
+ 	
+ 	elif test $shindy == '4'
  			then
- 			stop
  			echo ""
  			echo "Thanks for using this script"
  			sleep 2
@@ -123,51 +118,43 @@ echo "                      88000000008880#      000    "
 echo "                            9               0 "
 echo ""
 echo -e $white" ==========================================="
-echo -e $cyan"  Drac0S Linux Application Tools"
+echo -e $cyan"  Drac0S Linux Super Tools"
 echo -e $cyan"  Author: Apsyadira"
+echo -e $cyan"  Thanks to : All dev Dracos Linux"
 echo -e $cyan"  Visit: Dracos-linux.org"
 echo -e $white" ==========================================="
 echo ""
-echo -e $white"	[$red"01"$white] UPDATE APLIKASI"
-echo -e $white"	[$red"02"$white] FIREFOX 64 BIT"
-echo -e $white"	[$red"03"$white] FIREFOX 32 BIT"
-echo -e $white"	[$red"04"$white] INSTALL GTK3 (recomended)"
-echo -e $white"	[$red"05"$white] EXIT"
+echo -e $white"	[$red"01"$white] FIREFOX 64 BIT"
+echo -e $white"	[$red"02"$white] FIREFOX 32 BIT"
+echo -e $white"	[$red"03"$white] INSTALL GTK3 (recomended)"
+echo -e $white"	[$red"04"$white] EXIT"
 echo ""
-echo -n -e $cyan      "Insert your choise ?"
+echo -n -e $cyan      "Pilih yang anda suka ?"
 read shindy
 	if test $shindy == '1'
 			then
-			sudo apt-get update
+			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-x86_64/en-US/firefox-49.0.tar.bz2
+ 			tar -xvf firefox*.tar.bz2
+ 			mv firefox /opt
+ 			sudo ln -s /opt/firefox/firefox /usr/bin/firefox
 
 	elif test $shindy == '2'
  			then
- 			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-x86_64/en-US/firefox-49.0.tar.bz2
+ 			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-i686/en-US/firefox-49.0.tar.bz2
  			tar -xvf firefox*.tar.bz2
- 			cd firefox
  			mv firefox /opt
  			sudo ln -s /opt/firefox/firefox /usr/bin/firefox
  	
  	elif test $shindy == '3'
  			then
- 			wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/49.0/linux-i686/en-US/firefox-49.0.tar.bz2
- 			tar -xvf firefox*.tar.bz2
- 			cd firefox
- 			mv firefox /opt
- 			sudo ln -s /opt/firefox/firefox /usr/bin/firefox
- 	elif test $shindy == '4'
- 			then
  			wget -c ftp://ftp.gnome.org/pub/gnome/sources/gtk+/3.18/gtk+-3.18.7.tar.xz
  			tar -xf gtk+-3.18.7.tar.xz
  			cd gtk+-3.18.7
- 			./configure --prefix=/usr             \
-				    --sysconfdir=/etc         \
-				    --enable-broadway-backend \
-				    --enable-x11-backend      \
-				    --disable-wayland-backend &&
+ 			./configure
  			make
  			make install
- 	elif test $shindy == '5'
+ 	
+ 	elif test $shindy == '4'
  			then
  			echo ""
  			echo "Thanks for using this script"
